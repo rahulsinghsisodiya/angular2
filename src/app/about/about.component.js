@@ -10,21 +10,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
-var AppAbout = (function () {
-    function AppAbout(_router) {
+var AboutComponent = (function () {
+    function AboutComponent(_router) {
         this._router = _router;
     }
-    AppAbout.prototype.onBack = function () {
+    AboutComponent.prototype.onBack = function () {
         this._router.navigate(['']);
     };
-    return AppAbout;
+    return AboutComponent;
 }());
-AppAbout = __decorate([
+AboutComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: 'Inventory <a class = "button" (click) = "onBack()">Back to Products</a>'
+        templateUrl: './app-add.html'
     }),
     __metadata("design:paramtypes", [router_1.Router])
-], AppAbout);
-exports.AppAbout = AppAbout;
+], AboutComponent);
+exports.AboutComponent = AboutComponent;
 //# sourceMappingURL=about.component.js.map
